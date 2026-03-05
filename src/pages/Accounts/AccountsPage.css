@@ -1,0 +1,11 @@
+.accounts-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.accounts-page .charts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}

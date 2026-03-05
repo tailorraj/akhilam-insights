@@ -1,0 +1,23 @@
+.chart-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 24px rgba(99, 102, 241, 0.08);
+}
+
+.chart-card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 1.25rem 0;
+}
+
+.chart-card-body {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .chart-card {
+    padding: 1rem;
+  }
+}

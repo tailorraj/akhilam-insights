@@ -1,0 +1,70 @@
+.projects-page {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.projects-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.period-toggle {
+  display: flex;
+  background: #e0e7ff;
+  border-radius: 10px;
+  padding: 4px;
+  gap: 3px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.period-toggle-btn {
+  padding: 0.375rem 1rem;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #6366f1;
+  transition: background 0.15s, color 0.15s, box-shadow 0.15s;
+  white-space: nowrap;
+}
+
+.period-toggle-btn:hover:not(.active) {
+  background: #c7d2fe;
+}
+
+.period-toggle-btn.active {
+  background: #4f46e5;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.35);
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1.25rem;
+}
+
+.chart-full-width {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 767px) {
+  .projects-page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .period-toggle {
+    align-self: flex-start;
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
